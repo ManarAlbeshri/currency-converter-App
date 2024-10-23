@@ -14,12 +14,12 @@ public class Currency {
 		this.shortName = shortNameValue;
 	}
 	
-	// Getter for name-
+	// Get for name-
 	public String getName() {
 		return this.name;
 	}
 	
-	// Setter for name-
+	// Set for name-
 	public void setName(String name) {
 		this.name = name;
 	}
