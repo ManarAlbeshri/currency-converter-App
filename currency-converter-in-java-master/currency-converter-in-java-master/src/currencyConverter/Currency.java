@@ -8,43 +8,43 @@ public class Currency {
 	private String shortName;
 	private HashMap<String, Double> exchangeValues = new HashMap<String, Double>();
 	
-	// "Currency" Constructor
+	// "Currency" Constructor-
 	public Currency(String nameValue, String shortNameValue) {
 		this.name = nameValue;
 		this.shortName = shortNameValue;
 	}
 	
-	// Getter for name
+	// Getter for name-
 	public String getName() {
 		return this.name;
 	}
 	
-	// Setter for name
+	// Setter for name-
 	public void setName(String name) {
 		this.name = name;
 	}
 	
-	// Getter for shortName
+	// Getter for shortName-
 	public String getShortName() {
 		return this.shortName;
 	}
 	
-	// Setter for shortName
+	// Setter for shortName-
 	public void setShortName(String shortName) {
 		this.shortName = shortName;
 	}
 	
-	// Getter for exchangeValues
+	// Getter for exchangeValues-
 	public HashMap<String, Double> getExchangeValues() {
 		return this.exchangeValues;
 	}
 	
-	// Setter for exchangeValues
+	// Setter for exchangeValues-
 	public void setExchangeValues(String key, Double value) {
 		this.exchangeValues.put(key, value);
 	}
 	
-	// Set default values for a currency
+	// Set default values for a currency-
 	public void defaultValues() {
 		String currency = this.name;
 		
@@ -100,7 +100,7 @@ public class Currency {
 		}
 	}
 	
-	// Initialize currencies
+	// Initialize currencies-
 	public static ArrayList<Currency> init() {
 		ArrayList<Currency> currencies = new ArrayList<Currency>();
 				
@@ -118,7 +118,7 @@ public class Currency {
 		return currencies;
 	}
 	
-	// Convert a currency to another
+	// Convert a currency to another-
 	public static Double convert(Double amount, Double exchangeValue) {
 		Double price;
 		price = amount * exchangeValue;
